@@ -60,6 +60,23 @@ public class PictureTester
       beach.explore();
   }
   
+  public static void testMirrorVericalRightToLeft()
+  {
+    Picture motorcycle = new Picture("redMotorcycle.jpg");
+    motorcycle.explore();
+    motorcycle.mirrorVertical();
+    motorcycle.explore();
+      
+  }   
+  
+  public static void testHorizontal()
+  {
+    Picture motorcycle = new Picture("redMotorcycle.jpg");
+    motorcycle.explore();
+    motorcycle.mirrorVertical();
+    motorcycle.explore();
+      
+  }    
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -75,6 +92,8 @@ public class PictureTester
     //testGrayscale();
     //testFixUnderwater();
     testMirrorVertical();
+    testMirrorVericalRightToLeft();
+    testHorizontal();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
