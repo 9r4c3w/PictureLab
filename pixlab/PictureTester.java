@@ -69,6 +69,15 @@ public class PictureTester
       
   }   
   
+  public static void testMirrorArms()
+  {
+    Picture snowman = new Picture ("snowman.jpg");
+    snowman.explore();
+    snowman.mirrorArms();
+    snowman.explore();
+    
+  }
+  
   public static void testHorizontal()
   {
     Picture motorcycle = new Picture("redMotorcycle.jpg");
@@ -94,11 +103,11 @@ public class PictureTester
     testMirrorVertical();
     testMirrorVericalRightToLeft();
     testHorizontal();
-    //testMirrorTemple();
-    //testMirrorArms();
+    testMirrorTemple();
+    testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
