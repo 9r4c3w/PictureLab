@@ -86,6 +86,14 @@ public class PictureTester
     motorcycle.explore();
       
   }    
+  
+  public static void testCopy()
+  {
+      Picture ocean=new Picture("beach.JPG");
+      Picture flower=new Picture("snowman.JPG");
+      ocean.copy(flower, 10,10,60,160,180,230);
+      ocean.explore();
+  }
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -93,22 +101,22 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
-    testKeepOnlyBlue();
+    //testZeroBlue();
+    //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
-    testMirrorVericalRightToLeft();
-    testHorizontal();
-    testMirrorTemple();
-    testMirrorArms();
+    //testMirrorVertical();
+    //testMirrorVericalRightToLeft();
+    //testHorizontal();
+    //testMirrorTemple();
+    //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
-    //testCopy();
+    //testCollage();
+    testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
